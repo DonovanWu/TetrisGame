@@ -1,0 +1,20 @@
+# Output or compiled files
+*.pyc
+*.png
+*.jpg
+*.gz
+*.log
+*.sav
+
+# System generated files
+.DS_Store
+
+# IDE generated files
+/.idea
+.pytest_cache
+
+# Vim generated files
+*~
+*.swp
+*.swo
+
