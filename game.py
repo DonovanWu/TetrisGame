@@ -7,30 +7,25 @@ class Game:
     framecount = 0
     gamestate = None
 
-    # called when game is initialized
     def start(self):
         pass
 
-    # called every frame
     def update(self):
         pass
 
-    # called when game exits
     def end(self):
         pass
 
-    # how to present your game state to player
     def draw(self):
         pass
 
-    # get player input
     def get_input(self):
         pass
 
-    def is_closed(self):
+    def is_gameover(self):
         return False
 
-    def is_gameover(self):
+    def is_closed(self):
         return False
 
 
@@ -49,7 +44,8 @@ class TerminalWASDInputGame(Game):
         'x': 'B',
         'j': 'A',
         'k': 'B',
-        'q': 'quit'
+        'q': 'quit',
+        'r': 'restart'
     }
 
     def start(self):
